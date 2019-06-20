@@ -2,7 +2,7 @@
   "name": "cnode",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "luoan <1062233546@qq.com>",
+  "author": "Alvin",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

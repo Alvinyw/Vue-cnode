@@ -2,7 +2,8 @@
   <div class="pagination">
     <button @click="changeBtn">首页</button>
     <button @click="changeBtn">上一页</button>
-    <button v-for="btn in pagebtns"
+    <button v-for="(index, btn) in pagebtns"
+    :key="index"
     @click="changeBtn(btn)"
     :class="[{currentPage:btn == currentPage}, 'pagebtn']">
       {{btn}}
