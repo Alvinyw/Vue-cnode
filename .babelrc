@@ -1,3 +1,4 @@
+// babel 设置
 {
   "presets": [
     ["env", {
