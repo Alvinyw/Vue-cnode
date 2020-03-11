@@ -7,7 +7,7 @@ import SlideBar from '../components/SlideBar'
 
 Vue.use(Router)
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       name: 'root',
@@ -30,6 +30,13 @@ export default new Router({
       components: {
         main: UserInfo
       }
-    }
+    },
+    {
+      path: '*',
+      name: 'notFound',
+      redirect: {
+        name: 'root',
+      },
+    },
   ]
 })
