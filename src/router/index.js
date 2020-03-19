@@ -4,6 +4,7 @@ import PostList from '../components/PostList'
 import Article from '../components/Article'
 import UserInfo from '../components/UserInfo'
 import SlideBar from '../components/SlideBar'
+import Register from '../components/Register'
 
 Vue.use(Router)
 export default new Router({
@@ -29,6 +30,13 @@ export default new Router({
       path: '/userinfo/:name',
       components: {
         main: UserInfo
+      }
+    },
+    {
+      name: 'Register',
+      path: '/register',
+      components: {
+        main: Register
       }
     },
     {
